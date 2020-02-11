@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="stylerio.css">
 </head>
 <body>
+    <div id="wrapper">
 <header>
      <img src="img/rio2016.png" alt="Logo Rio Jo 2016" >
      <nav class="Navprincipal">
@@ -15,13 +16,20 @@
             <li><a href="#" title="Organisation">ORGANISATION</a></li>
             <li><a href="#" title="Sports">SPORTS</a></li>
             <li><a href="#" title="Infrastructures">INFRASTRUCTURES</a></li>
+           
         </ul>
     </nav>
-    <div class="burger">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
+    <div class="burger" id="hamburger"><!--burger-->
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="drop" id="dropdown">
+        <a href="#" >Accueil</a>
+        <a href="#">Organisation</a>
+        <a href="#">Sports</a>
+        <a href="#">Infrastructures</a>
+    </div>
 </header>
 <main>
     <section class="banniere"><!--pensez a z_index-->
@@ -92,16 +100,20 @@
         </ul>
     </aside>
    <div>
-       <img src="img/stitch.jpg" alt="fleche">
+       <a href="#"><img src="img/stitch.jpg" alt="fleche"> </a>
    </div>
 </section>
 </main>
 <footer>
     <section class="newsletter">
         <h3>NEWSLETTERS</h3>
-        <label>Nom</label><input  type="text" name="Nom"> <br>
-        <label>E-mail</label><input type="text" name="E-mail">        
-        <input type="submit" value="S'abonner">
+        <div id="nom">
+        <input  type="text" placeholder="Nom" name="Nom" >
+        </div>
+        <div id="form">
+        <input type="text" placeholder="E-mail" name="E-mail" >        
+        <input type="submit" value="S'abonner"class="myButton">
+        </div>
     </section>
 
     <section class="photos">
@@ -153,6 +165,8 @@
 
     
 </footer>
-    
+</div>
+
+<script src="rio.js"></script>
 </body>
 </html>
