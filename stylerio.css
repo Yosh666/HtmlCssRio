@@ -1,0 +1,239 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header,main,footer{
+    width: 80%;
+    margin:0 auto;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+header {
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 3px solid black;
+    margin-bottom: 0;
+}
+header img{
+    width: 20%;
+    margin-bottom: 0.5em;
+}
+    
+    .Navprincipal ul{
+        
+        display: flex;
+        padding: 0.4em;
+    }
+    .Navprincipal li{
+        padding: 0 4em;
+    }
+    .Navprincipal a{
+        text-decoration: none;
+        color: #000000;
+    }
+    .burger{
+        display: none;
+    }
+    .banniere {
+        position: relative;
+        overflow: hidden;
+        height: 300px;
+        margin-bottom: 1em;
+    }
+    
+        
+    
+    .banniere img{
+        display: block;
+        width: 100%;
+        transform: translateY(-50%);
+
+    }
+    .banniere p{
+        position: absolute;
+        margin: 0;
+        padding: 1em;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        color: #ffffff;
+        background-color:#000000;
+        background-color: rgba(0,0,0, .6)
+    }
+    .banniere a{
+        position: absolute;
+        bottom: 0.4em;
+        right:1em;
+
+        padding: 0.6em;
+        color: #ffffff;
+       border-radius: 10px;
+        text-decoration: none;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a90329+0,8f0222+44,6d0019+100;Brown+Red+3D */
+background: #a90329; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #a90329 0%, #8f0222 44%, #6d0019 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    }
+   
+.contenu{
+    display: flex;
+    margin-bottom: 0;
+    border-bottom: 3px solid black;
+    width: 100%;
+    position: relative;
+}
+    
+
+    article p{
+        text-align: justify;
+        margin-right: 4em;
+    }
+    h1{
+        font-size: 1.5em;
+        color: #000000;
+        font-weight: bold;
+    }
+    h1 img{
+        width: 32px;
+        margin-right: 0.5em;
+    }
+    aside{
+        
+        background-color: #000001;
+        margin:0 ;
+        padding: 2%;
+        width:28%;
+        height: 100%;
+
+
+    }
+        h2{
+            font-size: 1em;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+        }
+       
+        aside img{
+            display: block;
+            padding: 0;
+            width:100%;
+        }
+        aside p {
+            color: #ffffff;
+            text-align: justify;
+        }
+        aside ul img{
+            width: 32px;
+        }
+       
+        .contenu div img{
+            height:32px;
+            position: absolute;
+            bottom: -28px;
+            left: 50%;
+            transform: translateX(-50%);
+            
+        }
+footer{
+    display: flex;
+    padding: 1em;
+    justify-content: space-between;
+    align-items: baseline;
+}
+ h3{
+     font-size: 1.2em;
+     font-weight: bold;
+     color: #000000;
+ }
+    .newsletter{
+        width: 30%;
+    }
+    .photos{
+        width: 30%;
+    }
+    .photos img{
+        width: 4em;
+        height: 4em;
+        padding: 2px;
+
+    }
+    .partenaires{
+        width: 30%;
+    }
+    .partenaires img{
+        width: 5em;
+    }
+@media screen and (max-width: 790px){
+    
+    nav{
+        display: none;
+    }
+    .burger{
+        display: block;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        margin-left:40%;
+        transform: translateX(-50%);
+        margin-bottom: 0.5em;
+      }
+      .burger div {
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 30px;
+        margin: 0.5em auto;
+      }
+   
+    
+    
+        .banniere img{
+        transform: translateY(0);
+    }
+    .contenu{
+        flex-direction: column;
+        border-bottom: none;
+    }
+        article{
+            width: 100%;
+            margin-right: 0;
+         
+           
+        }
+            article p{ 
+                
+                margin-right: 0;
+              
+            }
+        aside {
+            width: 100%;
+          
+
+        }
+            aside ul{
+                justify-content: space-between;
+            }
+    footer{
+        flex-direction: column;
+    }
+        .newsletter, .partenaires,.photos{
+            width:100%;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+        }
+          .partenaires ul, .photos ul{
+            width:100%;
+            justify-content: space-between;
+          }
+    }
